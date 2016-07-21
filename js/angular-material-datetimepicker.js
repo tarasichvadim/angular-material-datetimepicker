@@ -96,7 +96,9 @@
             okText: '@',
             lang: '@',
             amText: '@',
-            pmText: '@'
+            pmText: '@',
+            onSuccess: '&',
+            onCancel: '&'
           },
           link: function (scope, element, attrs, ngModel) {
             var isOn = false;
@@ -155,8 +157,10 @@
                 .then(function (v) {
                   scope.currentDate = v ? v._d : v;
                   isOn = false;
+                  scope.onSuccess();
                 }, function () {
                   isOn = false;
+                  scope.onCancel();
                 })
               ;
             });

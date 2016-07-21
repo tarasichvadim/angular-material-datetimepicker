@@ -36,7 +36,9 @@
                     <label>Datepicker Only</label>
                     <input time="false" date="true" mdc-datetime-picker type="text" id="date"
                            placeholder="Date"
-                           ng-model="date" min-date="minDate" max-date="maxDate">
+                           ng-model="date" min-date="minDate" max-date="maxDate"
+                           on-success="onSuccess()"
+                           on-cancel="onCancel()">
                 </md-input-container>
                 <div  flex-gt-md="grow" flex-md="initial" ex-source-code target="input"></div>
             </div>

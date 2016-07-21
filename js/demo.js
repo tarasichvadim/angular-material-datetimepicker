@@ -13,6 +13,13 @@
       $scope.minDate = moment().subtract(1, 'month');
       $scope.maxDate = moment().add(1, 'month');
 
+      $scope.onSuccess = function () {
+        console.log('success');
+      }
+      $scope.onCancel = function () {
+        console.log('cancel');
+      }
+
     })
 
     .directive('exSourceCode', function () {

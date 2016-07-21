@@ -93,3 +93,5 @@ The directive accepts several attributes which are described below:
 | **time**			| Boolean						| true => Has Timepicker (default: true)		|
 | **cancel-text**	| String						| Text for the cancel button (default: Cancel)	|
 | **ok-text**		| String						| Text for the OK button (default: OK)			|
+| **on-submit**		| String						| Callback for submitting date change event		|
+| **on-cancel**		| String						| Callback for canceling date change event		|
