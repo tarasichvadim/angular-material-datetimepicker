@@ -97,7 +97,7 @@
             lang: '@',
             amText: '@',
             pmText: '@',
-            onSuccess: '&',
+            onSubmit: '&',
             onCancel: '&'
           },
           link: function (scope, element, attrs, ngModel) {
@@ -157,7 +157,7 @@
                 .then(function (v) {
                   scope.currentDate = v ? v._d : v;
                   isOn = false;
-                  scope.onSuccess();
+                  scope.onSubmit();
                 }, function () {
                   isOn = false;
                   scope.onCancel();
